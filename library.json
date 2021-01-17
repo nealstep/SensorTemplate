@@ -1,0 +1,10 @@
+{
+    "name": "NAME",
+    "description": "SHORT DESC",
+    "repository": {
+	    "type": "git",
+	    "url": "https://github.com/nealstep/PATH"
+    },
+    "frameworks": "arduino",
+    "platforms": "*"
+}
