@@ -5,7 +5,7 @@
 #include <Arduino.h>
 #include <Logger.h>
 
-#include <sensor_utils.h>
+#include <sensors_utils.h>
 
 void sensor_init(void);
 void sensor_check(void);

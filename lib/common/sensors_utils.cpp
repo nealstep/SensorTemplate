@@ -1,4 +1,4 @@
-#include <sensor_utils.h>
+#include <sensors_utils.h>
 
 void noop(void) {
     lg.debug("NoOp");
