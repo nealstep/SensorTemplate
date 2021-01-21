@@ -1,7 +1,5 @@
-#include <Arduino.h>
-#include <Logger.h>
-
-#include <sensor.h>
+#include <base.h>
+#include <sensors.h>
 
 static const uint32_t baud = 115200;
 static const uint16_t loop_delay = 5000;

@@ -1,4 +1,36 @@
-#include <sensors_utils.h>
+#include <sensors.h>
+
+void sensor_init(void) {
+    lg.debug("sensor init");
+
+// init begin flag
+#ifdef S_DUMMY
+    s_dummy_init();
+#endif // S_DUMMY
+
+#ifdef S_BME280
+    s_bme280_init();
+#endif // S_BME280
+
+#ifdef S_AHT20
+#include <s_aht20.h>
+#endif // S_AHT20
+// init end flag
+}
+
+void sensor_check(void) {
+    lg.debug("sensor check");
+
+// check begin flag
+#ifdef S_DUMMY
+    s_dummy_check();
+#endif // S_DUMMY
+
+#ifdef S_BME280
+    s_bme280_check();
+#endif // S_BME280
+// check end flag
+}
 
 void noop(void) {
     lg.debug("NoOp");
