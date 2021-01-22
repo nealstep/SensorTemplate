@@ -11,6 +11,10 @@ void sensor_init(void) {
 #ifdef S_BME280
     s_bme280_init();
 #endif // S_BME280
+
+#ifdef S_AHT20
+    s_aht20_init();
+#endif // S_AHT20
 // init end flag
 }
 
@@ -25,6 +29,10 @@ void sensor_check(void) {
 #ifdef S_BME280
     s_bme280_check();
 #endif // S_BME280
+
+#ifdef S_AHT20
+    s_aht20_check();
+#endif // S_AHT20
 // check end flag
 }
 

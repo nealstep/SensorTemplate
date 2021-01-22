@@ -18,7 +18,8 @@ static const uint8_t ana_samp = 5;
 // sensor to test
 // define begin flag
 // #define S_DUMMY
-#define S_BME280
+// #define S_BME280
+#define S_AHT20
 // define end flag
 
 #endif // BASE_H

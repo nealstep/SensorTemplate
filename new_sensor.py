@@ -57,10 +57,9 @@ def add_before(fn, flag, txt, flag2=None, txt2=None):
                     if line.strip() == flag2:
                         fpw.write(txt2)
                 fpw.write(line)
-    #rename(fn, fno)
-    #rename(fnn, fn)
+    rename(fn, fno)
+    rename(fnn, fn)
     
-
 def clone(fs, fd, name):
     if not exists(fs):
         print("Exiting original file does not exist ({})".format(fs))
@@ -82,17 +81,17 @@ def update_base_h(name):
     add_before(fn, flag, txt)
 
 def update_sensors_h(name):
-    txt = SENSOR_H.format(name['upper'], name['lower'], name['upper'])
-    flag = FLAG.format("include")
     fn = pjoin(PATH, "lib/sensors/sensors.h")
+    flag = FLAG.format("include")
+    txt = SENSOR_H.format(name['upper'], name['lower'], name['upper'])
     add_before(fn, flag, txt)
 
 def update_sensors_cpp(name):
-    txt = SENSOR_H.format(name['upper'], name['lower'], name['upper'])
-    flag = FLAG.format("init")
     fn = pjoin(PATH, "lib/sensors/sensors.cpp")
-    txt2 = SENSOR_H.format(name['upper'], name['lower'], name['upper'])
-    flag2 = FLAG.format("begin")
+    flag = FLAG.format("init")
+    txt = SENSOR_CPP_1.format(name['upper'], name['lower'], name['upper'])
+    flag2 = FLAG.format("check")
+    txt2 = SENSOR_CPP_2.format(name['upper'], name['lower'], name['upper'])
     add_before(fn, flag, txt, flag2, txt2)
 
 def create_dir(name):

@@ -18,4 +18,8 @@ uint16_t ana_read(void);
 #ifdef S_BME280
 #include <s_bme280.h>
 #endif // S_BME280
+
+#ifdef S_AHT20
+#include <s_aht20.h>
+#endif // S_AHT20
 // include end flag
