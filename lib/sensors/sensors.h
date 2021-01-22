@@ -30,4 +30,28 @@ uint16_t ana_read(void);
 #ifdef S_MHZ16
 #include <s_mhz16.h>
 #endif // S_MHZ16
+
+#ifdef S_SCD30S
+#include <s_scd30s.h>
+#endif // S_SCD30S
+
+#ifdef S_SHT31S
+#include <s_sht31s.h>
+#endif // S_SHT31S
+
+#ifdef S_SI1145
+#include <s_si1145.h>
+#endif // S_SI1145
+
+#ifdef S_TEMP_NTC
+#include <s_temp_ntc.h>
+#endif // S_TEMP_NTC
+
+#ifdef S_MLX90641
+#include <s_mlx90641.h>
+#endif // S_MLX90641
+
+#ifdef S_ULTRASONIC
+#include <s_ultrasonic.h>
+#endif // S_ULTRASONIC
 // include end flag

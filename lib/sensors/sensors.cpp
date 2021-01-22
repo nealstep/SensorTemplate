@@ -23,6 +23,30 @@ void sensor_init(void) {
 #ifdef S_MHZ16
     s_mhz16_init();
 #endif // S_MHZ16
+
+#ifdef S_SCD30S
+    s_scd30s_init();
+#endif // S_SCD30S
+
+#ifdef S_SHT31S
+    s_sht31s_init();
+#endif // S_SHT31S
+
+#ifdef S_SI1145
+    s_si1145_init();
+#endif // S_SI1145
+
+#ifdef S_TEMP_NTC
+    s_temp_ntc_init();
+#endif // S_TEMP_NTC
+
+#ifdef S_MLX90641
+    s_mlx90641_init();
+#endif // S_MLX90641
+
+#ifdef S_ULTRASONIC
+    s_ultrasonic_init();
+#endif // S_ULTRASONIC
 // init end flag
 }
 
@@ -49,6 +73,30 @@ void sensor_check(void) {
 #ifdef S_MHZ16
     s_mhz16_check();
 #endif // S_MHZ16
+
+#ifdef S_SCD30S
+    s_scd30s_check();
+#endif // S_SCD30S
+
+#ifdef S_SHT31S
+    s_sht31s_check();
+#endif // S_SHT31S
+
+#ifdef S_SI1145
+    s_si1145_check();
+#endif // S_SI1145
+
+#ifdef S_TEMP_NTC
+    s_temp_ntc_check();
+#endif // S_TEMP_NTC
+
+#ifdef S_MLX90641
+    s_mlx90641_check();
+#endif // S_MLX90641
+
+#ifdef S_ULTRASONIC
+    s_ultrasonic_check();
+#endif // S_ULTRASONIC
 // check end flag
 }
 
