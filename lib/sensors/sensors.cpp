@@ -15,6 +15,14 @@ void sensor_init(void) {
 #ifdef S_AHT20
     s_aht20_init();
 #endif // S_AHT20
+
+#ifdef S_DS18B20
+    s_ds18b20_init();
+#endif // S_DS18B20
+
+#ifdef S_MHZ16
+    s_mhz16_init();
+#endif // S_MHZ16
 // init end flag
 }
 
@@ -33,6 +41,14 @@ void sensor_check(void) {
 #ifdef S_AHT20
     s_aht20_check();
 #endif // S_AHT20
+
+#ifdef S_DS18B20
+    s_ds18b20_check();
+#endif // S_DS18B20
+
+#ifdef S_MHZ16
+    s_mhz16_check();
+#endif // S_MHZ16
 // check end flag
 }
 

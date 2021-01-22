@@ -22,4 +22,12 @@ uint16_t ana_read(void);
 #ifdef S_AHT20
 #include <s_aht20.h>
 #endif // S_AHT20
+
+#ifdef S_DS18B20
+#include <s_ds18b20.h>
+#endif // S_DS18B20
+
+#ifdef S_MHZ16
+#include <s_mhz16.h>
+#endif // S_MHZ16
 // include end flag
