@@ -21,17 +21,17 @@ static const float vin = 3.3;
 
 // sensor to test
 // define begin flag
-// #define S_DUMMY
-// #define S_BME280
 // #define S_AHT20
+// #define S_BME280
 // #define S_DS18B20
+// #define S_DUMMY
 // #define S_MHZ16
+#define S_MLX90641
 // #define S_SCD30S
 // #define S_SHT31S
 // #define S_SI1145
 // #define S_TEMP_NTC
-// #define S_MLX90641
-#define S_ULTRASONIC
+// #define S_ULTRASONIC
 // define end flag
 
 #endif // BASE_H
