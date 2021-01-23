@@ -47,6 +47,14 @@ void sensor_init(void) {
 #ifdef S_ULTRASONIC
     s_ultrasonic_init();
 #endif // S_ULTRASONIC
+
+#ifdef S_DHT
+    s_dht_init();
+#endif // S_DHT
+
+#ifdef S_MLX90615
+    s_mlx90615_init();
+#endif // S_MLX90615
 // init end flag
 }
 
@@ -97,6 +105,14 @@ void sensor_check(void) {
 #ifdef S_ULTRASONIC
     s_ultrasonic_check();
 #endif // S_ULTRASONIC
+
+#ifdef S_DHT
+    s_dht_check();
+#endif // S_DHT
+
+#ifdef S_MLX90615
+    s_mlx90615_check();
+#endif // S_MLX90615
 // check end flag
 }
 

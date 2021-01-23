@@ -20,7 +20,7 @@ void s_ultrasonic_check(void) {
     uint32_t cm;
 
     cm = ultrasonic.MeasureInCentimeters();
-    lg.report("ultra.dist", cm);
+    lg.report("ultrasonic.dist", cm);
 }
 
 #endif // S_ULTRASONIC

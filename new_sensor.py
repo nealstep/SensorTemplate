@@ -77,7 +77,7 @@ def clone(fs, fd, name):
 def update_base_h(name):
     txt = BASE_H.format(name['upper'])
     flag = FLAG.format("define")
-    fn = pjoin(PATH, "lib/common/base.h")
+    fn = pjoin(PATH, "lib/common/sensor_list.h")
     add_before(fn, flag, txt)
 
 def update_sensors_h(name):

@@ -1,3 +1,6 @@
+#ifndef SENSORS_H
+#define SENSORS_H
+
 #include <base.h>
 
 // main call
@@ -54,4 +57,14 @@ uint16_t ana_read(void);
 #ifdef S_ULTRASONIC
 #include <s_ultrasonic.h>
 #endif // S_ULTRASONIC
+
+#ifdef S_DHT
+#include <s_dht.h>
+#endif // S_DHT
+
+#ifdef S_MLX90615
+#include <s_mlx90615.h>
+#endif // S_MLX90615
 // include end flag
+
+#endif // SENSORS_H

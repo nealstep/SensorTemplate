@@ -30,7 +30,7 @@ void s_temp_ntc_check(void) {
     t3 = t2 + (1.0 / t0);
     t = 1.0 / t3;
     t -= 273.15;
-    lg.report("temp.tempc", conv_float_uint32(t));  
+    lg.report("temp_ntc.tempc", conv_float_uint32(t));  
 }
 
 #endif // S_TEMP_NTC
